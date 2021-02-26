@@ -14,15 +14,21 @@
 .container {
     background: var(--white);
     width: 100%;
-    max-width: 400px;
+    max-width: 580px;
     padding: 2rem 3rem;
     border-radius: 5px;
     box-shadow: 0 0 30px rgba( 0, 0, 0, 0.2);
     text-align: center;
     position: relative;
+
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-content: space-between;
 }
 
-.container header {
+.LeftDiv header {
     font-size: 8.75rem;
     font-weight: 600;
     color: var(--blue);
@@ -30,15 +36,54 @@
     background-size: contain;
 }
 
-.container strong {
+.LeftDiv strong {
     font-size: 2.25rem;
     color: var(--tile);
 }
 
-.container p {
+.LeftDiv p {
     font-size: 1.25rem;
     color: var(--text);
     margin-top: 0.25rem;
+}
+
+
+.RightDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.RightDiv > div {
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+    border-bottom: solid 1px rgba(194, 194, 194, 0.6);
+}
+
+.RightDiv div header {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    opacity: .8;
+}
+
+.RightDiv > div > p {
+    display: flex;
+    flex-flow: row nowrap;
+    font-weight: 500;
+    margin-left: 0.5rem;
+}
+
+.RightDiv > div > p > div { 
+    font-weight: 600;
+    margin-right: 0.3rem;
+}
+
+.RightDiv > div > p > div:first-child { 
+    color: var(--blue);
 }
 
 .container button {

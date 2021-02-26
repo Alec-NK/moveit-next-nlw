@@ -20,6 +20,7 @@ interface ChallengesContextData {
     resetChallenge: () => void;
     completeChallenge: () => void;
     closeLevelUpModal: () => void;
+    allExperience: number;
 }
 
 interface ChallengesProviderProps {
@@ -27,6 +28,7 @@ interface ChallengesProviderProps {
     level: number;
     currentExperience: number;
     challengesCompleted: number;
+    allExperience: number;
 }
 
 export const ChallengesContext = createContext({} as ChallengesContextData);
@@ -38,11 +40,14 @@ export function ChallengesProvider({
     const [level, setLevel] = useState(rest.level ?? 1);
     const [currentExperience, setCurrentExperience] = useState(rest.currentExperience ?? 0);
     const [challengesCompleted, setChallengesCompleted] = useState(rest.challengesCompleted ?? 0);
+    const [allExperience, setAllExperience] = useState(rest.allExperience ?? 0);
 
     const [activeChallenge, setActiveChallenge] = useState(null);
     const [isLevelUpModalOpen, setIsLevelUpModalOpen] = useState(false);
 
     const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
+
+    console.log(rest);
 
     useEffect(() => {
         Notification.requestPermission();
@@ -52,7 +57,8 @@ export function ChallengesProvider({
         Cookies.set('level', String(level));
         Cookies.set('currentExperience', String(currentExperience));
         Cookies.set('challengesCompleted', String(challengesCompleted));
-    }, [level, currentExperience, challengesCompleted]);
+        Cookies.set('allExperience', String(allExperience));
+    }, [level, currentExperience, challengesCompleted, allExperience]);
 
     function levelUp(){
         setLevel(level + 1);
@@ -84,18 +90,21 @@ export function ChallengesProvider({
 
     function completeChallenge(){
         if(!activeChallenge){
-             return;
+            return;
         }
 
         const { amount } = activeChallenge;
 
         let finalExperience = currentExperience + amount;
 
+        let experience = allExperience + amount;
+
         if(finalExperience >= experienceToNextLevel){
             finalExperience = finalExperience - experienceToNextLevel;
             levelUp();
         }
 
+        setAllExperience(experience);
         setCurrentExperience(finalExperience);
         setActiveChallenge(null);
         setChallengesCompleted(challengesCompleted + 1);
@@ -113,7 +122,8 @@ export function ChallengesProvider({
                 activeChallenge,
                 resetChallenge,
                 completeChallenge,
-                closeLevelUpModal
+                closeLevelUpModal,
+                allExperience
             }}
         >
             {children}
