@@ -37,6 +37,7 @@ export function LevelUpModal() {
                             <div>xp</div>
                         </p>
                     </div>
+                    <img src="/logo-full.svg" alt=""/>
                 </div>
 
                 <button type="button" onClick={closeLevelUpModal}>

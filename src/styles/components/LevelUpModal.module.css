@@ -86,6 +86,11 @@
     color: var(--blue);
 }
 
+.RightDiv img {
+    margin-top: 1.5rem;
+    width: 8rem;
+}
+
 .container button {
     position: absolute;
     right: 0.5rem;
