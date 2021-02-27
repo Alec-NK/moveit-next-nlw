@@ -22,12 +22,12 @@ exercícios físicos de curta duração, ele ganha xp para poder avançar para o
   <div>
     <img width="300" src="./.github/screenOne.jpg" /> &nbsp
     <img width="300" src="./.github/screenTwo.jpg" /> &nbsp
-    <img width="300" src="./.github/screenThree.jpg" />
+    <img width="300" src="./.github/screenThree.jpg" /> &nbsp
   </div>
   <div>
     <img width="300" src="./.github/screenFour.jpg" /> &nbsp
     <img width="300" src="./.github/screenFive.jpg" /> &nbsp
-    <img width="300" src="./.github/screenOne.jpg" />
+    <img width="300" src="./.github/screenOne.jpg" /> &nbsp
   </div>
 </p>
 
