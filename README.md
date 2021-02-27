@@ -18,19 +18,20 @@ exercícios físicos de curta duração, ele ganha xp para poder avançar para o
 
 # :framed_picture: Telas
 
-<div style="display: flex; flex-flow: column nowrap" width="100%">
-  <div style="display: flex; flex-direction: row">
-    <img src="./.github/screenOne.jpg" />
-    <img src="./.github/screenTwo.jpg" />
-    <img src="./.github/screenThree.jpg" />
+<div>
+  <div>
+    <img width="300" src="./.github/screenOne.jpg" /> &nbsp
+    <img width="300" src="./.github/screenTwo.jpg" /> &nbsp
+    <img width="300" src="./.github/screenThree.jpg" />
   </div>
-  <div style="display: flex; flex-direction: row">
-    <img src="./.github/screenFour.jpg" />
-    <img src="./.github/screenFive.jpg" />
-    <img src="./.github/screenOne.jpg" />
+  <div>
+    <img width="300" src="./.github/screenFour.jpg" /> &nbsp
+    <img width="300" src="./.github/screenFive.jpg" /> &nbsp
+    <img width="300" src="./.github/screenOne.jpg" />
   </div>
-</div>
+</p>
 
+<br>
 <br>
 
 # :computer: Tecnologias
