@@ -7,13 +7,13 @@
   <a href="#mag-deploy">Deploy</a> •
   <a href="#framed_picture-telas">Telas</a> •
   <a href="#computer-tecnologias">Tecnologias</a> •
+  <a href="#fountain_pen-como-rodar-o-projeto">Como Rodar</a> 
 </p>
 
 
 # :newspaper: Sobre 
 
-O Move.it é um App que implementa a [Técnica Pomodoro](https://www.estudaqui.com/blog/organizacao-de-estudos/tecnica-pomodoro-estudar/), porém na forma de um mini game. Cada vez que o usuário completa um desafio, 
-exercícios físicos de curta duração, ele ganha xp para poder avançar para o próximo nível.
+O Move.it é um App que implementa a [Técnica Pomodoro](https://www.estudaqui.com/blog/organizacao-de-estudos/tecnica-pomodoro-estudar/), porém na forma de um mini game. Cada vez que um ciclo encerra o usuário recebe um desafio, exercícios físicos de curta duração, que se ele completar ganha xp para poder avançar para o próximo nível.
 
 <br>
 
@@ -71,19 +71,19 @@ $ npm run dev
 
 ```
 
-Entre em https://localhost:300/ para ver o resultado
+Entre em https://localhost:3000/ para ver o resultado
 
 <br>
 
 # Autor
 
 <a href="https://github.com/Alec-NK">
- <img style="border-radius: 50%;" src="https://github.com/alec-nk.png" width="100px;" alt=""/>
+ <img style="border-radius:50%;" src="https://github.com/alec-nk.png" width="100px;" alt=""/>
  <br />
  <sub>
    <b>Alec Eiki</b>
  </sub>
- <a href="https://github.com/Alec-NK" title="Github">🚀
+ <a href="https://github.com/Alec-NK">
 </a>
 
 
