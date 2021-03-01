@@ -15,3 +15,20 @@
     gap: 6.25rem;
     align-content: center;
 }
+
+.githubIcon {
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    opacity: .3;
+    transition: .2s;
+}
+
+.githubIcon:hover {
+    opacity: 1;
+    transition: .2s;
+}
+
+.githubIcon > img {
+    width: 2.5rem;
+}

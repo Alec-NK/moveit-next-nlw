@@ -32,6 +32,10 @@ export default function Home(props) {
 
         <ExperienceBar />
 
+        <a href="https://github.com/Alec-NK" className={styles.githubIcon}>
+          <img src="../../icons/gitIcon.svg" />
+        </a>
+
         <CountdownProvider>
           <section>
             <div>
