@@ -75,6 +75,12 @@ Entre em https://localhost:3000/ para ver o resultado
 
 <br>
 
+# :page_facing_up: Licença
+
+Esse projeto está sob licença MIT, pode ser encontrado no arquivo [LICENSE](/LICENSE).
+
+<br>
+
 # Autor
 
 <a href="https://github.com/Alec-NK">
